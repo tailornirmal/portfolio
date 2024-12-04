@@ -10,8 +10,6 @@
     "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
     "build": "npm run css -- --env 'production'",
     "format": "npx prettier ./**/*.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
