@@ -78,6 +78,12 @@
               </li>
 
               <li class="group pl-6">
+                <span @click="triggerNavItem('#recognition')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Recognition</span>
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
 
                 <span @click="triggerNavItem('#clients')"
                   class="cursor-pointer pt-0.5 font-header font-semibold text-white">Clients</span>
@@ -135,6 +141,10 @@
             <li class="py-2">
               <span @click="triggerMobileNavItem('#certifications')"
                 class="cursor-pointer pt-0.5 font-header font-semibold text-white">Certifications</span>
+            </li>
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#recognition')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Recognition</span>
             </li>
             <li class="py-2">
               <span @click="triggerMobileNavItem('#clients')"
@@ -499,6 +509,24 @@
           </div>
         </div>
 
+        <!-- Recognition Section -->
+
+        <div class="container py-16 md:py-20" id="recognition">
+          <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+            Recognition & Awards
+          </h2>
+          <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+            <a href="javascript:void(0);" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+              <img src="./assets/img/pat-on-back-award-capita.jpg" class="w-full shadow rounded border-dotted border-2"
+                alt="Pat on Back Award by Capita" />
+            </a>
+            <a href="javascript:void(0);" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+              <img src="./assets/img/circle-of-excellence-award-capita.jpg" class="w-full shadow rounded border-dotted border-2"
+                alt="Pat on Back Award by Capita" />
+            </a>
+          </div>
+        </div>
+
         <div class="bg-grey-50" id="clients">
           <div class="container py-16 md:py-20">
             <div class="mx-auto w-full sm:w-3/4 lg:w-full">
@@ -507,19 +535,24 @@
               </h2>
               <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
                 <span class="m-8 block">
-                  <img src="./assets/img/retain_logo.svg" alt="Retain International Logo"
-                    class="mx-auto block h-12 w-auto" />
+                  <a href="https://www.retaininternational.com" target="_blank">
+                    <img src="./assets/img/retain_logo.svg" alt="Retain International Logo" class="mx-auto block h-12 w-auto" />
+                  </a>
                 </span>
                 <span class="m-8 block">
-                  <img src="./assets/img/qjumpers_logo.png" alt="QJumpers Logo" class="mx-auto block h-12 w-auto" />
+                    <a href="https://www.qjumpers.com" target="_blank">
+                    <img src="./assets/img/qjumpers_logo.png" alt="QJumpers Logo" class="mx-auto block h-12 w-auto" />
+                    </a>
                 </span>
-
                 <span class="m-8 block">
-                  <img src="./assets/img/neosphere.png" alt="Neosphere Logo" class="mx-auto block h-12 w-auto" />
+                  <a href="https://www.neosphere.com" target="_blank">
+                    <img src="./assets/img/neosphere.png" alt="Neosphere Logo" class="mx-auto block h-12 w-auto" />
+                  </a></a>
                 </span>
-
                 <span class="m-8 block">
-                  <img src="./assets/img/nissan_logo.png" alt="Nissan Logo" class="mx-auto block h-12 w-auto" />
+                  <a href="https://www.nissan.in" target="_blank">
+                    <img src="./assets/img/nissan_logo.png" alt="Nissan Logo" class="mx-auto block h-12 w-auto" />
+                  </a>
                 </span>
               </div>
             </div>
@@ -528,11 +561,8 @@
 
         <div class="container py-16 md:py-20" id="work">
           <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
-            My work experience
+            Work Experience
           </h2>
-          <!-- <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            After completing my Master's in Computer Applications in 2015, here's what I did next.
-          </h3> -->
 
           <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
             <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
@@ -555,8 +585,8 @@
                   <div class="mt-1 flex">
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40">May 2023 - December 2024</span>
-                      <span class="block pt-2 font-header text-xl font-bold text-primary">Freelance Developer ( React & Javascript )</span>
+                      <span class="block font-body font-bold text-black-40">May / 2023 - December / 2024</span>
+                      <span class="block pt-2 font-header text-xl font-bold text-primary">Lead React Developer, Technical Consultant</span>
                       <div class="pt-2 text-sm">
                         <span class="block font-body text-black">Due to personal health reasons, I had to take a break from regular full-time employment. As a temporary measure, I chose a career in freelancing and Technical consulting.
                           <br /><br />I contributed to Front-End projects and worked with US, New Zealand, and Indian clients to design React project architectures in the HRMS and Telecom Domain. Additionally, I completed Udemy certifications in TypeScript, Modern React with Redux, and Next.js.                         
@@ -571,7 +601,9 @@
               <div class="md:w-2/5">
                 <div class="flex justify-center md:justify-start">
                   <span class="shrink-0">
-                    <img src="./assets/img/logo-globant.svg" class="h-auto w-32" alt="Globant Logo" />
+                    <a href="https://www.globant.com" target="_blank">
+                      <img src="./assets/img/logo-globant.svg" class="h-auto w-32" alt="Globant Logo" />
+                    </a>
                   </span>
                   <div class="relative ml-3 hidden w-full md:block">
                     <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -586,14 +618,12 @@
                   <div class="mt-1 flex">
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40">March 2022 - May 2023</span>
-                      <span class="block pt-2 font-header text-xl font-bold text-primary">Senior React JS
-                        Developer</span>
+                      <span class="block font-body font-bold text-black-40">March / 2022 - May / 2023</span>
+                      <span class="block pt-2 font-header text-xl font-bold text-primary">Senior Software Consultant, Acting Team Lead</span>
                       <div class="pt-2 text-sm">
                         <span class="block font-body text-black">Led the <b>Nissan India</b> Project as Team Lead,
-                          responsible for creating reusable React UI components, managing environment builds,
-                          and deploying branches to testing environments. My tasks included PR creation, review, and
-                          merging.
+                          responsible for creating reusable React UI components, Helping the team remove technical debts, 
+                          overseeing requirements with business analysts, and identifying technical feasibility. Managing environment builds, and deploying branches to testing environments. 
                         </span>
                       </div>
                     </div>
@@ -605,7 +635,9 @@
               <div class="md:w-2/5">
                 <div class="flex justify-center md:justify-start">
                   <span class="shrink-0">
-                    <img src="./assets/img/capita_logo.png" class="h-auto w-32" alt="Capita Logo" />
+                    <a href="https://www.capita.com" target="_blank">
+                      <img src="./assets/img/capita_logo.png" class="h-auto w-32" alt="Capita Logo" />
+                    </a>
                   </span>
                   <div class="relative ml-3 hidden w-full md:block">
                     <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -619,7 +651,7 @@
                   <div class="mt-1 flex">
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40">Sep 2019 - March 2022</span>
+                      <span class="block font-body font-bold text-black-40">Sep / 2019 - March / 2022</span>
                       <span class="block pt-2 font-header text-xl font-bold text-primary">Senior Software
                         Engineer</span>
                       <div class="pt-2">
@@ -645,7 +677,9 @@
               <div class="md:w-2/5">
                 <div class="flex justify-center md:justify-start">
                   <span class="shrink-0">
-                    <img src="./assets/img/logo_harbinger.jpg" class="h-auto w-32" alt="company logo" />
+                    <a href="https://www.harbinger-systems.com" target="_blank">
+                      <img src="./assets/img/logo_harbinger.jpg" class="h-auto w-32" alt="company logo" />
+                    </a></a>
                   </span>
                   <div class="relative ml-3 hidden w-full md:block">
                     <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -660,7 +694,7 @@
                   <div class="mt-1 flex">
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40">September 2017 - September 2019</span>
+                      <span class="block font-body font-bold text-black-40">September / 2017 - September / 2019</span>
                       <span class="block pt-2 font-header text-xl font-bold text-primary">Senior Software
                         Engineer</span>
                       <div class="pt-2">
@@ -682,7 +716,9 @@
               <div class="md:w-2/5">
                 <div class="flex justify-center md:justify-start">
                   <span class="shrink-0">
-                    <img src="./assets/img/epicomm_logo.png" class="h-auto w-32" alt="Epicomm Logo" />
+                    <a href="https://epicomm.net" target="_blank">
+                      <img src="./assets/img/epicomm_logo.png" class="h-auto w-32" alt="Epicomm Logo" />
+                    </a>
                   </span>
                   <div class="relative ml-3 hidden w-full md:block">
                     <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -697,11 +733,11 @@
                   <div class="mt-1 flex">
                     <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
                     <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40">September 2015 - September 2017</span>
+                      <span class="block font-body font-bold text-black-40">September / 2015 - September / 2017</span>
                       <span class="block pt-2 font-header text-xl font-bold text-primary">Software Engineer</span>
                       <div class="pt-2">
                         <span class="block font-body text-black text-sm">After completing my Master's in Computer
-                          Applications, I joined Epicomm Technologies as a Junior Software Engineer. During my time
+                          Applications in 2015, I joined Epicomm Technologies as a Junior Software Engineer. During my time
                           there, I worked with jQuery and Ajax,
                           focusing on form validations, API integration, and rendering UI components.
                           <br />
