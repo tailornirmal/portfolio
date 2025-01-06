@@ -390,7 +390,7 @@
             These are the Technical services I offer
           </h3>
 
-          <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3 cursor-pointer">
             <div class="group rounded px-8 py-12 shadow hover:bg-primary">
               <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                 <div class="hidden group-hover:block">
@@ -523,6 +523,10 @@
             <a href="javascript:void(0);" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
               <img src="./assets/img/circle-of-excellence-award-capita.jpg" class="w-full shadow rounded border-dotted border-2"
                 alt="Pat on Back Award by Capita" />
+            </a>
+            <a href="javascript:void(0);" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+              <img src="./assets/img/mit-college-recognition.jpg" class="w-full shadow rounded border-dotted border-2"
+                alt="MIT College Recognition" />
             </a>
           </div>
         </div>
@@ -813,68 +817,21 @@
             <h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
               Check out my latest posts!
             </h4>
-            <div class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10">
-              <a target="_blank"
-                href="https://medium.com/@technktailor/ai-chat-gpt-black-box-in-2024-for-javascript-react-developers-b085ae1de509"
-                class="shadow">
-                <div
-                  style="background-image: url(./assets/img/AI-Chat-GPT-Black-Box-in-2024-for-Javascript-React-Developers-by-Nirmal-Kumar-Tailor-Medium-12-13-2024_06_46_PM.png)"
-                  class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
-                  <span
-                    class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
-                </div>
-                <div class="bg-white py-6 px-5 xl:py-8">
-                  <span class="block font-body text-lg font-semibold text-black">AI and Chat GPT Usage Guidlines</span>
-                  <span class="block pt-2 font-body text-grey-20">I explained how AI and ChatGPT tools can help
-                    developers achieve their goals.</span>
-                </div>
-              </a>
-              <a target="_blank"
-                href="https://medium.com/@technktailor/how-to-check-if-the-javascript-object-is-empty-8e1a754a91b8"
-                class="shadow">
-                <div
-                  style="background-image: url(./assets/img/How-to-check-if-the-javascript-object-is-empty-Nirmal-Kumar-Tailor-Medium-12-13-2024_06_47_PM.png)"
-                  class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
-                  <span
-                    class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
-                </div>
-                <div class="bg-white py-6 px-5 xl:py-8">
-                  <span class="block font-body text-lg font-semibold text-black">Check if Javascript Object is
-                    Empty</span>
-                  <span class="block pt-2 font-body text-grey-20">This article explains how we can check if given object
-                    is empty or not using core javascript.</span>
-                </div>
-              </a>
-
-              <a target="_blank" href="https://medium.com/@technktailor/how-to-clone-javascript-objects-bd1dbc42e630"
-                class="shadow">
-                <div
-                  style="background-image: url(./assets/img/How-to-clone-javascript-objects-There-are-two-methods-for-copying…-by-Nirmal-Kumar-Tailor-Dec-2024-Medium-12-13-2024_06_50_PM.png)"
-                  class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
-                  <span
-                    class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
-                </div>
-                <div class="bg-white py-6 px-5 xl:py-8">
-                  <span class="block font-body text-lg font-semibold text-black">Create copy of javascript object</span>
-                  <span class="block pt-2 font-body text-grey-20">This article explain how to create shallow copy and
-                    deep copy of javascript object.</span>
-                </div>
-              </a>
-              <a target="_blank"
-                href="https://medium.com/@technktailor/how-to-add-function-to-javascriot-object-ca24ce10c36f"
-                class="shadow">
-                <div
-                  style="background-image: url(./assets/img/How-to-add-function-to-javascriot-object-by-Nirmal-Kumar-Tailor-Dec-2024-Medium-12-14-2024_06_33_PM.png)"
-                  class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
-                  <span
-                    class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
-                </div>
-                <div class="bg-white py-6 px-5 xl:py-8">
-                  <span class="block font-body text-lg font-semibold text-black">Add methods to Javascript object</span>
-                  <span class="block pt-2 font-body text-grey-20">This article explain how to add methods to JS
-                    Object.</span>
-                </div>
-              </a>
+            <div class="mx-auto grid w-full pt-12 h-50 overflow-scroll">
+              <ul class="w-full text-lg font-medium text-gray-900 bg-white rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                  <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-sm dark:border-gray-600 cursor-pointer border-b-2">
+                    <a target="_blank" href="https://medium.com/@technktailor/gavs-gs-lab-senior-react-js-developer-interview-questions-864e241f4410" onclick="javascript:void(0)">GAVS | GS Lab Senior React JS Developer Interview Questions</a>
+                      <p class="italic">Publish Date : 06/01/2025</p>
+                  </li>
+                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600 border-b-2">
+                    <a target="_blank" href="https://medium.com/@technktailor/how-to-add-function-to-javascriot-object-ca24ce10c36f" onclick="javascript:void(0)">How to add function to javascriot object</a>
+                    <p class="italic">Publish Date : 14/12/2024</p>
+                  </li>
+                  <li class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600 border-b-2">
+                    <a href="https://medium.com/@technktailor/how-to-clone-javascript-objects-bd1dbc42e630" target="_blank" onclick="javascript:void(0)">How to clone javascript objects</a>
+                  <p class="italic">Publish Date : 13/12/2024</p>
+                  </li>
+              </ul>
             </div>
           </div>
           <div class="bg-primary">
