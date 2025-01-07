@@ -1187,8 +1187,8 @@ html {
   border-bottom-width: 2px;
 }
 
-.border-dotted {
-  border-style: dotted;
+.border-solid {
+  border-style: solid;
 }
 
 .border-grey-40 {
